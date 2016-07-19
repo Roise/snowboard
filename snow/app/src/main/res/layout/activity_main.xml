@@ -9,8 +9,73 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.roi.snow.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!" />
+    <LinearLayout
+        android:id="@+id/button_container_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/movie01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1번"/>
+
+        <Button
+            android:id="@+id/movie02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2번"/>
+
+        <Button
+            android:id="@+id/movie03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3번"/>
+
+        <Button
+            android:id="@+id/movie04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4번"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/button_container"
+        android:layout_below="@id/button_container_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/movie05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5번"/>
+
+        <Button
+            android:id="@+id/movie06"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6번"/>
+
+        <Button
+            android:id="@+id/movie07"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7번"/>
+
+        <Button
+            android:id="@+id/movie08"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8번"/>
+    </LinearLayout>
+
+    <uk.co.senab.photoview.PhotoView
+        android:id="@+id/iv_photo"
+        android:layout_below="@id/button_container"
+        android:src="@drawable/snowpark"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
 </RelativeLayout>
