@@ -44,10 +44,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Intent intent = new Intent(getApplicationContext(), MovieActivity.class);
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(intent);
-                //AIzaSyBQsA6XCTkEEHcQnLgy-HgS6uB7TgrPLEE
+
                 break;
 
             case R.id.movie02:
+            case R.id.movie03:
+            case R.id.movie04:
+            case R.id.movie05:
+            case R.id.movie06:
+            case R.id.movie07:
+            case R.id.movie08:
                 Intent intent1 = new Intent(getApplicationContext(), MovieActivity.class);
                 intent1.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(intent1);
