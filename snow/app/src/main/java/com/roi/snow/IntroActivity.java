@@ -1,10 +1,14 @@
 package com.roi.snow;
 
-import android.content.Intent;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+import com.roi.snow.util.NavigationUtil;
+
+/**
+ * Intro 화면
+ */
 public class IntroActivity extends AppCompatActivity {
     private Handler mTimer = null;
     private boolean mIsTimerOn = false;
@@ -29,9 +33,7 @@ public class IntroActivity extends AppCompatActivity {
                   try {
                       if(mIsTimerOn) {
                           // 메인 이동
-                          Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-                          intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                          startActivity(intent);
+                          NavigationUtil.gotoMain(getApplicationContext());
 //                          overridePendingTransition(R.anim.hold,);
                       }
                       finish();

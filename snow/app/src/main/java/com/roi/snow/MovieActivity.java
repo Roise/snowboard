@@ -53,7 +53,7 @@ public class MovieActivity extends YouTubeBaseActivity implements YouTubePlayer.
         if (!wasRestored) {
             //player.cueVideo("wKJ9KzGQq0w"); //video id.
 
-            player.cueVideo("IA1hox-v0jQ");  //http://www.youtube.com/watch?v=IA1hox-v0jQ
+            player.cueVideo("Eyv1_eawaJI");  //http://www.youtube.com/watch?v=IA1hox-v0jQ
 
             //cueVideo(String videoId)
             //지정한 동영상의 미리보기 이미지를 로드하고 플레이어가 동영상을 재생하도록 준비하지만
